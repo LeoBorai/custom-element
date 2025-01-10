@@ -13,26 +13,20 @@ readme = "README.md"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-web-sys = { version = "0.3.68", features = [
+web-sys = { version = "0.3.70", features = [
 	"Window",
 	"Event",
 	"Document",
 	"HtmlElement",
 ] }
-js-sys = "0.3.68"
-wasm-bindgen = "0.2.99"
+js-sys = "0.3.70"
+wasm-bindgen = "=0.2.93"
 
 [dev-dependencies]
-wasm-bindgen-test = "0.3.42"
-rand = { version = "0.8.5" }
 getrandom = { version = "0.2.14", features = ["js"] }
-web-sys = { version = "0.3.68", features = [
+rand = { version = "0.8.5" }
+wasm-bindgen-test = "0.3"
+web-sys = { version = "0.3.70", features = [
 	"CustomElementRegistry",
 	"ElementDefinitionOptions",
 ] }
-
-
-[dev-dependencies.cargo-husky]
-version = "1"
-default-features = false
-features = ["user-hooks"]
